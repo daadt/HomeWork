@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Dadts</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="unknow_error">未知错误</string>
+    <string name="conn_error">连接失败</string>
+    <string name="conn_timeout">连接超时</string>
+    <string name="net_error">网络错误</string>
+    <string name="parse_error">解析异常</string>
+    <string name="net_unused">当前网络不可用</string>
+    <string name="login_tv">登录/注册</string>
+    <string name="discounts">邀请好友注册APP，想多重好礼 限时特惠，多邀多得</string>
+    <string name="course">课程相关</string>
+    <string name="me_work">我的作业</string>
+    <string name="attention_teacher">关注的老师</string>
+    <string name="my_collect">我的收藏</string>
+    <string name="my_download">我的下载</string>
+    <string name="order_from">订单相关</string>
+    <string name="my_account">我的账户</string>
+    <string name="automatic_service">自动服务</string>
+    <string name="my_order">我的订单</string>
+    <string name="shipping_address">收货地址</string>
+    <string name="coupon">优惠券</string>
+    <string name="study_card">学习卡</string>
+    <string name="vip_card">会员</string>
+    <string name="my_news">我的消息</string>
+    <string name="feed_back">意见反馈</string>
+    <string name="service_line">在线客服</string>
+    <string name="settings">设置</string>
+    <string name="title_home">分类</string>
+    <string name="title_dashboard">排序</string>
+    <string name="title_notifications">筛选</string>
+</resources>
