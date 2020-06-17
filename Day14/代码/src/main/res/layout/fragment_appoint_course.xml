@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="约课记录"
+        android:textSize="@dimen/sp_18"
+        android:background="@color/white"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"/>
+    
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout_appoint_course"
+        android:layout_width="match_parent"
+        app:tabSelectedTextColor="#FC5602"
+        app:tabRippleColor="@null"
+        android:background="@color/white"
+        app:tabTextColor="#333333"
+        app:tabIndicatorColor="#FC5602"
+        app:tabIndicatorFullWidth="false"
+        android:layout_height="@dimen/dp_50"/>
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
+</LinearLayout>
