@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_home"
+        android:icon="@drawable/sel_tab_home"
+        android:title="首页" />
+    <item
+        android:id="@+id/tab_course"
+        android:icon="@drawable/sel_tab_course"
+        android:title="课程" />
+    <item
+        android:id="@+id/tab_appoint_course"
+        android:icon="@drawable/sel_tab_appoint_course"
+        android:title="约课记录" />
+    <item
+        android:id="@+id/tab_user"
+        android:icon="@drawable/sel_tab_user"
+        android:title="个人" />
+</menu>

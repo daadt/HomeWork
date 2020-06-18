@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@mipmap/ic_status_empty"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/dp_100"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="还没有上课记录哦"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/sp_15"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginTop="@dimen/dp_26"
+        android:text="立即约课"
+        android:background="#eb6100"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/sp_15"
+        android:textColor="@color/white"
+        android:layout_width="@dimen/dp_118"
+        android:layout_height="@dimen/dp_40"/>
+</LinearLayout>

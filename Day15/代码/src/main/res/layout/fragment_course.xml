@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rl_course_top"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40">
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="课程列表"
+            android:textSize="@dimen/sp_18"
+            android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/public_ic_search_img"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_18"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_16"
+            android:background="@mipmap/public_ic_search" />
+    </RelativeLayout>
+    
+    <RadioGroup
+        android:background="@color/white"
+        android:id="@+id/rg_course_group"
+        app:layout_constraintTop_toBottomOf="@+id/rl_course_top"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/dp_50">
+
+        <RadioButton
+            android:id="@+id/rb_group_type"
+            android:background="#00ffffff"
+            android:layout_width="0dp"
+            android:button="@null"
+            android:text="分类"
+            android:paddingLeft="@dimen/dp_30"
+            android:paddingRight="@dimen/dp_30"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/sel_textcolor_course_group"
+            android:gravity="center"
+            android:drawableRight="@drawable/sel_course_group"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/rb_group_sort"
+            android:background="#00ffffff"
+            android:layout_width="0dp"
+            android:button="@null"
+            android:paddingLeft="@dimen/dp_30"
+            android:paddingRight="@dimen/dp_30"
+            android:text="排序"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/sel_textcolor_course_group"
+            android:gravity="center"
+            android:drawableRight="@drawable/sel_course_group"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/rb_group_select"
+            android:background="#00ffffff"
+            android:layout_width="0dp"
+            android:button="@null"
+            android:paddingLeft="@dimen/dp_30"
+            android:paddingRight="@dimen/dp_30"
+            android:text="筛选"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/sel_textcolor_course_group"
+            android:gravity="center"
+            android:drawableRight="@drawable/sel_course_group"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+        </RadioButton>
+    </RadioGroup>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            layout="@layout/group_type"
+            android:visibility="gone"
+            android:id="@+id/group_type"/>
+        <include
+            layout="@layout/group_sort"
+            android:visibility="gone"
+            android:id="@+id/group_sort"/>
+        <include
+            layout="@layout/group_select"
+            android:visibility="gone"
+            android:id="@+id/group_select"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</LinearLayout>
